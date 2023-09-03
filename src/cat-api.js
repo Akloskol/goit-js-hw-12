@@ -11,9 +11,7 @@ function fetchBreeds() {
     .then(res => {
       return res.data;
     })
-    .catch(err => {
-      console.log('1', err.response);
-    });
+    
 }
 
 function fetchCatByBreed(breedId) {

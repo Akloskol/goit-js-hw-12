@@ -11,7 +11,10 @@ console.log(elements.error.classList.value === 'error');
 console.log(!elements.error.classList.value === 'error');
 fetchBreeds().then(arr => {
   return addcats(arr);
-});
+})
+  .catch(err => {
+      console.log('1', err.response);
+    });
 
 //********** Create markup **********/
 function addcats(arr) {
